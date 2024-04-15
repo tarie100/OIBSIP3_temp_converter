@@ -8,11 +8,9 @@
 <body>
     <div class="container text-center">
     <h1 class="font-family-verdana fw-bolder">TEMPERATURE CONVERTER</h1>
-
     {% if error_message %}
         <p>{{ error_message }}</p>
     {% endif %}
-
     <form method="POST" action="/">
         <input type="text" name="temperature" placeholder="Enter temperature" required>
         <select name="unit">
@@ -22,7 +20,6 @@
         </select>
         <button class="btn btn-primary" type="submit">Convert</button>
     </form>
-
     {% if converted_temperature %}
         <p>{{ converted_temperature }} {{ converted_unit }}</p>
     {% endif %}
