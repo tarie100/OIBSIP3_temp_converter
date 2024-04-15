@@ -1,3 +1,4 @@
-from build import convert_temperature
+from build.app import app
 
-app = convert_temperature
+if __name__ == '__main__':
+    app.run()
