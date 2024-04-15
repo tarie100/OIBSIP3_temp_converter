@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
 </head>
 <body>
-    <div class="container text-center">
-    <h1 class="font-family-verdana fw-bolder">TEMPERATURE CONVERTER</h1>
+    <div class="container text-center"><h1 class="font-family-verdana fw-bolder">TEMPERATURE CONVERTER</h1>
     {% if error_message %}
         <p>{{ error_message }}</p>
     {% endif %}
@@ -17,8 +16,7 @@
             <option value="celsius">Celsius</option>
             <option value="fahrenheit">Fahrenheit</option>
             <option value="kelvin">Kelvin</option>
-        </select>
-        <button class="btn btn-primary" type="submit">Convert</button>
+        </select><button class="btn btn-primary" type="submit">Convert</button>
     </form>
     {% if converted_temperature %}
         <p>{{ converted_temperature }} {{ converted_unit }}</p>
